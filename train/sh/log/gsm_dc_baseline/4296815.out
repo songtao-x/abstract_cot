@@ -1,0 +1,8 @@
+[gsm_dc_baseline] root=/home/songtaow/projects/aip-qchen/songtaow/reward_hack/abstract/train/gsm/gsm_dc
+[gsm_dc_baseline] model=Qwen/Qwen3-4B dataset=YMinglai/GSM-DC-Dataset-Sample op_values=16,17,18,19,20,21,22 nshots=5
+[gsm_dc_eval:startup] loading models for ops=(16, 17, 18, 19, 20, 21, 22) on device=cuda
+[gsm_dc_eval:model_load] op=16 loading model from Qwen/Qwen3-4B
+[gsm_dc_eval:model_ready] op=16 model loaded and moved to device
+[gsm_dc_eval:model_load] op=17 loading model from Qwen/Qwen3-4B
+[gsm_dc_eval:model_ready] op=17 model loaded and moved to device
+[gsm_dc_eval:model_load] op=18 loading model from Qwen/Qwen3-4B

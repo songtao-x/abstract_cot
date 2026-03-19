@@ -1,0 +1,11 @@
+data/
+outputs/
+train/outputs/
+train/debug/
+train/gsm/gsm_dc/
+train/log/
+
+wandb/
+**/__pycache__/
+*.log
+*.pyc

@@ -1,0 +1,356 @@
+The following values were not passed to `accelerate launch` and had defaults used instead:
+		More than one GPU was found, enabling multi-GPU training.
+		If this was unintended please pass in `--num_processes=1`.
+	`--num_machines` was set to a value of `1`
+	`--mixed_precision` was set to a value of `'no'`
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+/project/aip-xiye17/songtaow/llm/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'repr' attribute with value False was provided to the `Field()` function, which has no effect in the context it was used. 'repr' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/project/aip-xiye17/songtaow/llm/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'repr' attribute with value False was provided to the `Field()` function, which has no effect in the context it was used. 'repr' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/project/aip-xiye17/songtaow/llm/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'frozen' attribute with value True was provided to the `Field()` function, which has no effect in the context it was used. 'frozen' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/project/aip-xiye17/songtaow/llm/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'frozen' attribute with value True was provided to the `Field()` function, which has no effect in the context it was used. 'frozen' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/project/aip-xiye17/songtaow/llm/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'repr' attribute with value False was provided to the `Field()` function, which has no effect in the context it was used. 'repr' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/project/aip-xiye17/songtaow/llm/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'frozen' attribute with value True was provided to the `Field()` function, which has no effect in the context it was used. 'frozen' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/project/aip-xiye17/songtaow/llm/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'repr' attribute with value False was provided to the `Field()` function, which has no effect in the context it was used. 'repr' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/project/aip-xiye17/songtaow/llm/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'frozen' attribute with value True was provided to the `Field()` function, which has no effect in the context it was used. 'frozen' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+wandb: Currently logged in as: 2456821202 to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:00,  7.29it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:00,  8.64it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:00,  7.58it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00,  7.23it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00,  7.59it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00,  7.11it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 11.44it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 10.78it/s]
+
+Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 10.58it/s]
+wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+wandb: Tracking run with wandb version 0.21.0
+wandb: Run data is saved locally in /home/songtaow/projects/wandb/run-20260310_195103-r9owknke
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run gsm-grpo-plan-qwen3-4b
+wandb: ⭐️ View project at https://wandb.ai/2456821202/abstract_grpo_runs
+wandb: 🚀 View run at https://wandb.ai/2456821202/abstract_grpo_runs/runs/r9owknke
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 59.85it/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+[rank1]:[W310 19:51:17.266570358 ProcessGroupNCCL.cpp:981] Warning: TORCH_NCCL_AVOID_RECORD_STREAMS is the default now, this environment variable is thus deprecated. (function operator())
+[rank2]:[W310 19:51:17.267272305 ProcessGroupNCCL.cpp:981] Warning: TORCH_NCCL_AVOID_RECORD_STREAMS is the default now, this environment variable is thus deprecated. (function operator())
+[rank3]:[W310 19:51:17.465351168 ProcessGroupNCCL.cpp:981] Warning: TORCH_NCCL_AVOID_RECORD_STREAMS is the default now, this environment variable is thus deprecated. (function operator())
+[rank0]:[W310 19:51:18.445651746 ProcessGroupNCCL.cpp:981] Warning: TORCH_NCCL_AVOID_RECORD_STREAMS is the default now, this environment variable is thus deprecated. (function operator())
+libibverbs: Warning: Driver bnxt_re does not support the kernel ABI of 8 (supports 1 to 1) for device /sys/class/infiniband/bnxtlibibverbs: Warning: Driver bnxt_re does not support the kernel ABI of 8 (supports 1 to 1) for device /sys/class/infiniband/bnxtlibibverbs: Warning: Driver bnxt_re does not support the kernel ABI of 8 (supports 1 to 1) for device /sys/class/infiniband/bnxtlibibverbs: Warning: Driver bnxt_re does not support the kernel ABI of 8 (supports 1 to 1) for device /sys/class/infiniband/bnxt_re0
+_re0
+_re0
+_re0
+Loading safetensors checkpoint shards:   0% Completed | 0/3 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  33% Completed | 1/3 [00:03<00:06,  3.49s/it]
+Loading safetensors checkpoint shards:  67% Completed | 2/3 [00:07<00:03,  3.94s/it]
+Loading safetensors checkpoint shards: 100% Completed | 3/3 [00:07<00:00,  2.20s/it]
+Loading safetensors checkpoint shards: 100% Completed | 3/3 [00:07<00:00,  2.63s/it]
+
+Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   0%|          | 0/4 [00:00<?, ?it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  75%|███████▌  | 3/4 [00:00<00:00, 25.05it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 4/4 [00:00<00:00, 22.86it/s]
+[rank3]:[W310 19:52:07.336899663 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 3]  using GPU 3 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+[rank1]:[W310 19:52:07.364096151 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+[rank2]:[W310 19:52:07.383014978 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 2]  using GPU 2 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+[rank0]:[W310 19:52:07.384191162 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None, 'pad_token_id': 151643}.
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None, 'pad_token_id': 151643}.
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None, 'pad_token_id': 151643}.
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None, 'pad_token_id': 151643}.
+Gradient accumulation steps mismatch: GradientAccumulationPlugin has 1, DeepSpeed config has 8. Using DeepSpeed's value.
+[rank3]:W0310 19:52:12.020000 447662 torch/utils/cpp_extension.py:2425] TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+[rank3]:W0310 19:52:12.020000 447662 torch/utils/cpp_extension.py:2425] If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'] to specific architectures.
+  0%|          | 0/630 [00:00<?, ?it/s]Could not estimate the number of tokens of the input, floating-point operations will not be computed
+Could not estimate the number of tokens of the input, floating-point operations will not be computed
+Could not estimate the number of tokens of the input, floating-point operations will not be computed
+Could not estimate the number of tokens of the input, floating-point operations will not be computed
+  0%|          | 1/630 [01:48<18:57:03, 108.46s/it]  0%|          | 2/630 [02:59<15:07:53, 86.74s/it]                                                     0%|          | 2/630 [03:00<15:07:53, 86.74s/it]  0%|          | 3/630 [04:38<16:04:00, 92.25s/it]  1%|          | 4/630 [06:04<15:37:29, 89.85s/it]                                                    1%|          | 4/630 [06:04<15:37:29, 89.85s/it]  1%|          | 5/630 [08:09<17:45:53, 102.32s/it]  1%|          | 6/630 [09:46<17:24:00, 100.38s/it]                                                     1%|          | 6/630 [09:46<17:24:00, 100.38s/it]  1%|          | 7/630 [11:32<17:43:24, 102.41s/it]  1%|▏         | 8/630 [13:42<19:11:10, 111.05s/it]                                                     1%|▏         | 8/630 [13:42<19:11:10, 111.05s/it]  1%|▏         | 9/630 [15:43<19:43:47, 114.38s/it]  2%|▏         | 10/630 [17:37<19:40:34, 114.25s/it]                                                      2%|▏         | 10/630 [17:37<19:40:34, 114.25s/it]
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 25%|██▌       | 2/8 [01:34<04:43, 47.20s/it][A
+ 38%|███▊      | 3/8 [02:45<04:45, 57.11s/it][A
+ 50%|█████     | 4/8 [03:55<04:07, 61.91s/it][A
+ 62%|██████▎   | 5/8 [05:20<03:29, 69.91s/it][A
+ 75%|███████▌  | 6/8 [06:31<02:20, 70.19s/it][A
+ 88%|████████▊ | 7/8 [07:47<01:12, 72.11s/it][A
+100%|██████████| 8/8 [08:56<00:00, 71.21s/it][A                                                    
+                                             [A  2%|▏         | 10/630 [27:55<19:40:34, 114.25s/it]
+100%|██████████| 8/8 [08:56<00:00, 71.21s/it][A
+                                             [A  2%|▏         | 11/630 [29:55<52:27:57, 305.13s/it]  2%|▏         | 12/630 [31:31<41:28:13, 241.58s/it]                                                      2%|▏         | 12/630 [31:31<41:28:13, 241.58s/it]  2%|▏         | 13/630 [33:38<35:27:12, 206.86s/it]  2%|▏         | 14/630 [35:32<30:33:51, 178.62s/it]                                                      2%|▏         | 14/630 [35:32<30:33:51, 178.62s/it]  2%|▏         | 15/630 [37:31<27:25:49, 160.57s/it]  3%|▎         | 16/630 [38:57<23:35:55, 138.36s/it]                                                      3%|▎         | 16/630 [38:57<23:35:55, 138.36s/it]  3%|▎         | 17/630 [40:42<21:49:58, 128.22s/it]  3%|▎         | 18/630 [41:58<19:07:45, 112.53s/it]                                                      3%|▎         | 18/630 [41:58<19:07:45, 112.53s/it]  3%|▎         | 19/630 [43:24<17:43:32, 104.44s/it]  3%|▎         | 20/630 [44:49<16:44:24, 98.79s/it]                                                      3%|▎         | 20/630 [44:49<16:44:24, 98.79s/it]
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 25%|██▌       | 2/8 [00:59<02:59, 29.94s/it][A
+ 38%|███▊      | 3/8 [01:56<03:24, 40.90s/it][A
+ 50%|█████     | 4/8 [02:55<03:11, 47.85s/it][A
+ 62%|██████▎   | 5/8 [03:50<02:31, 50.39s/it][A
+ 75%|███████▌  | 6/8 [04:46<01:44, 52.11s/it][A
+ 88%|████████▊ | 7/8 [05:40<00:52, 52.72s/it][A
+100%|██████████| 8/8 [06:30<00:00, 51.76s/it][A                                                   
+                                             [A  3%|▎         | 20/630 [52:12<16:44:24, 98.79s/it]
+100%|██████████| 8/8 [06:30<00:00, 51.76s/it][A
+                                             [A  3%|▎         | 21/630 [53:57<39:29:29, 233.45s/it]  3%|▎         | 22/630 [55:19<31:47:40, 188.26s/it]                                                      3%|▎         | 22/630 [55:19<31:47:40, 188.26s/it]  4%|▎         | 23/630 [56:29<25:42:59, 152.52s/it]  4%|▍         | 24/630 [58:03<22:44:24, 135.09s/it]                                                      4%|▍         | 24/630 [58:03<22:44:24, 135.09s/it]  4%|▍         | 25/630 [59:24<19:57:47, 118.79s/it]  4%|▍         | 26/630 [1:00:45<18:02:21, 107.52s/it]                                                        4%|▍         | 26/630 [1:00:45<18:02:21, 107.52s/it]  4%|▍         | 27/630 [1:02:25<17:36:50, 105.16s/it]  4%|▍         | 28/630 [1:03:46<16:24:18, 98.10s/it]                                                        4%|▍         | 28/630 [1:03:46<16:24:18, 98.10s/it]  5%|▍         | 29/630 [1:05:05<15:24:05, 92.25s/it]  5%|▍         | 30/630 [1:06:22<14:35:50, 87.58s/it]                                                       5%|▍         | 30/630 [1:06:22<14:35:50, 87.58s/it]
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 25%|██▌       | 2/8 [00:56<02:50, 28.49s/it][A
+ 38%|███▊      | 3/8 [01:54<03:22, 40.47s/it][A
+ 50%|█████     | 4/8 [02:42<02:54, 43.52s/it][A
+ 62%|██████▎   | 5/8 [03:44<02:29, 49.81s/it][A
+ 75%|███████▌  | 6/8 [04:46<01:47, 53.96s/it][A
+ 88%|████████▊ | 7/8 [05:46<00:55, 55.66s/it][A
+100%|██████████| 8/8 [06:42<00:00, 55.99s/it][A                                                     
+                                             [A  5%|▍         | 30/630 [1:13:56<14:35:50, 87.58s/it]
+100%|██████████| 8/8 [06:42<00:00, 55.99s/it][A
+                                             [A  5%|▍         | 31/630 [1:15:37<37:55:22, 227.92s/it]  5%|▌         | 32/630 [1:16:53<30:17:29, 182.36s/it]                                                        5%|▌         | 32/630 [1:16:53<30:17:29, 182.36s/it]  5%|▌         | 33/630 [1:18:23<25:38:26, 154.62s/it]  5%|▌         | 34/630 [1:19:44<21:56:32, 132.54s/it]                                                        5%|▌         | 34/630 [1:19:44<21:56:32, 132.54s/it]  6%|▌         | 35/630 [1:21:17<19:55:26, 120.55s/it]  6%|▌         | 36/630 [1:22:38<17:58:22, 108.93s/it]                                                        6%|▌         | 36/630 [1:22:38<17:58:22, 108.93s/it]  6%|▌         | 37/630 [1:23:54<16:17:54, 98.95s/it]   6%|▌         | 38/630 [1:25:28<16:02:02, 97.50s/it]                                                       6%|▌         | 38/630 [1:25:28<16:02:02, 97.50s/it]  6%|▌         | 39/630 [1:27:01<15:45:59, 96.04s/it]  6%|▋         | 40/630 [1:28:28<15:18:24, 93.40s/it]                                                       6%|▋         | 40/630 [1:28:28<15:18:24, 93.40s/it]
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 25%|██▌       | 2/8 [01:03<03:11, 31.85s/it][A
+ 38%|███▊      | 3/8 [02:13<03:58, 47.77s/it][A
+ 50%|█████     | 4/8 [03:11<03:26, 51.59s/it][A
+ 62%|██████▎   | 5/8 [04:20<02:52, 57.44s/it][A
+ 75%|███████▌  | 6/8 [05:15<01:53, 56.60s/it][A
+ 88%|████████▊ | 7/8 [06:16<00:58, 58.25s/it][A
+100%|██████████| 8/8 [07:19<00:00, 59.75s/it][A                                                     
+                                             [A  6%|▋         | 40/630 [1:36:49<15:18:24, 93.40s/it]
+100%|██████████| 8/8 [07:19<00:00, 59.75s/it][A
+                                             [A  7%|▋         | 41/630 [1:39:23<42:50:24, 261.84s/it]  7%|▋         | 42/630 [1:41:16<35:28:54, 217.24s/it]                                                        7%|▋         | 42/630 [1:41:16<35:28:54, 217.24s/it]  7%|▋         | 43/630 [1:42:45<29:08:38, 178.74s/it]  7%|▋         | 44/630 [1:44:42<26:06:16, 160.37s/it]                                                        7%|▋         | 44/630 [1:44:42<26:06:16, 160.37s/it]  7%|▋         | 45/630 [1:46:10<22:31:07, 138.58s/it]  7%|▋         | 46/630 [1:48:07<21:26:36, 132.19s/it]                                                        7%|▋         | 46/630 [1:48:07<21:26:36, 132.19s/it]  7%|▋         | 47/630 [1:50:13<21:04:27, 130.13s/it]  8%|▊         | 48/630 [1:51:52<19:32:31, 120.88s/it]                                                        8%|▊         | 48/630 [1:51:52<19:32:31, 120.88s/it]  8%|▊         | 49/630 [1:53:22<18:01:09, 111.65s/it]  8%|▊         | 50/630 [1:55:30<18:46:35, 116.54s/it]                                                        8%|▊         | 50/630 [1:55:30<18:46:35, 116.54s/it]
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 25%|██▌       | 2/8 [01:21<04:04, 40.76s/it][A
+ 38%|███▊      | 3/8 [02:36<04:35, 55.13s/it][A
+ 50%|█████     | 4/8 [04:00<04:23, 65.99s/it][A
+ 62%|██████▎   | 5/8 [05:27<03:39, 73.19s/it][A
+ 75%|███████▌  | 6/8 [06:46<02:30, 75.18s/it][A
+ 88%|████████▊ | 7/8 [08:01<01:15, 75.06s/it][A
+100%|██████████| 8/8 [09:07<00:00, 72.29s/it][A                                                      
+                                             [A  8%|▊         | 50/630 [2:05:54<18:46:35, 116.54s/it]
+100%|██████████| 8/8 [09:07<00:00, 72.29s/it][A
+                                             [A  8%|▊         | 51/630 [2:07:37<48:11:26, 299.63s/it]  8%|▊         | 52/630 [2:09:28<39:00:36, 242.97s/it]                                                        8%|▊         | 52/630 [2:09:28<39:00:36, 242.97s/it]  8%|▊         | 53/630 [2:11:36<33:25:20, 208.53s/it]  9%|▊         | 54/630 [2:13:37<29:09:44, 182.26s/it]                                                        9%|▊         | 54/630 [2:13:37<29:09:44, 182.26s/it]  9%|▊         | 55/630 [2:15:49<26:42:53, 167.26s/it]  9%|▉         | 56/630 [2:17:44<24:10:20, 151.60s/it]                                                        9%|▉         | 56/630 [2:17:44<24:10:20, 151.60s/it]  9%|▉         | 57/630 [2:19:26<21:44:11, 136.57s/it]  9%|▉         | 58/630 [2:21:31<21:08:25, 133.05s/it]                                                        9%|▉         | 58/630 [2:21:31<21:08:25, 133.05s/it]  9%|▉         | 59/630 [2:23:28<20:23:01, 128.51s/it] 10%|▉         | 60/630 [2:25:24<19:42:47, 124.50s/it]                                                       10%|▉         | 60/630 [2:25:24<19:42:47, 124.50s/it]
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 25%|██▌       | 2/8 [01:28<04:24, 44.03s/it][A
+ 38%|███▊      | 3/8 [02:57<05:15, 63.07s/it][A
+ 50%|█████     | 4/8 [04:29<04:55, 73.92s/it][A
+ 62%|██████▎   | 5/8 [05:49<03:47, 75.78s/it][A
+ 75%|███████▌  | 6/8 [07:09<02:34, 77.19s/it][A
+ 88%|████████▊ | 7/8 [08:34<01:19, 79.69s/it][A
+100%|██████████| 8/8 [09:45<00:00, 77.09s/it][A                                                      
+                                             [A 10%|▉         | 60/630 [2:36:21<19:42:47, 124.50s/it]
+100%|██████████| 8/8 [09:45<00:00, 77.09s/it][A
+                                             [A 10%|▉         | 61/630 [2:38:23<50:43:13, 320.90s/it] 10%|▉         | 62/630 [2:40:12<40:36:27, 257.37s/it]                                                       10%|▉         | 62/630 [2:40:12<40:36:27, 257.37s/it] 10%|█         | 63/630 [2:41:28<31:58:51, 203.05s/it] 10%|█         | 64/630 [2:43:40<28:33:11, 181.61s/it]                                                       10%|█         | 64/630 [2:43:40<28:33:11, 181.61s/it] 10%|█         | 65/630 [2:45:50<26:04:20, 166.12s/it] 10%|█         | 66/630 [2:48:11<24:51:15, 158.64s/it]                                                       10%|█         | 66/630 [2:48:11<24:51:15, 158.64s/it] 11%|█         | 67/630 [2:50:32<23:57:51, 153.24s/it] 11%|█         | 68/630 [2:52:40<22:45:01, 145.73s/it]                                                       11%|█         | 68/630 [2:52:40<22:45:01, 145.73s/it] 11%|█         | 69/630 [2:54:40<21:29:28, 137.91s/it] 11%|█         | 70/630 [2:56:33<20:19:47, 130.69s/it]                                                       11%|█         | 70/630 [2:56:33<20:19:47, 130.69s/it]
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 25%|██▌       | 2/8 [01:46<05:18, 53.02s/it][A
+ 38%|███▊      | 3/8 [03:20<05:52, 70.44s/it][A
+ 50%|█████     | 4/8 [05:02<05:28, 82.18s/it][A
+ 62%|██████▎   | 5/8 [06:35<04:17, 85.92s/it][A
+ 75%|███████▌  | 6/8 [07:59<02:50, 85.23s/it][A
+ 88%|████████▊ | 7/8 [09:26<01:25, 85.68s/it][A
+100%|██████████| 8/8 [11:02<00:00, 88.95s/it][A                                                      
+                                             [A 11%|█         | 70/630 [3:09:18<20:19:47, 130.69s/it]
+100%|██████████| 8/8 [11:02<00:00, 88.95s/it][A
+                                             [A 11%|█▏        | 71/630 [3:11:48<56:48:22, 365.84s/it] 11%|█▏        | 72/630 [3:13:56<45:40:20, 294.66s/it]                                                       11%|█▏        | 72/630 [3:13:56<45:40:20, 294.66s/it] 12%|█▏        | 73/630 [3:15:34<36:26:24, 235.52s/it] 12%|█▏        | 74/630 [3:17:33<30:58:22, 200.54s/it]                                                       12%|█▏        | 74/630 [3:17:33<30:58:22, 200.54s/it] 12%|█▏        | 75/630 [3:19:18<26:29:39, 171.86s/it] 12%|█▏        | 76/630 [3:21:23<24:17:33, 157.86s/it]                                                       12%|█▏        | 76/630 [3:21:23<24:17:33, 157.86s/it] 12%|█▏        | 77/630 [3:23:25<22:36:10, 147.14s/it] 12%|█▏        | 78/630 [3:25:22<21:08:53, 137.92s/it]                                                       12%|█▏        | 78/630 [3:25:22<21:08:53, 137.92s/it] 13%|█▎        | 79/630 [3:27:09<19:42:27, 128.76s/it] 13%|█▎        | 80/630 [3:28:48<18:19:56, 119.99s/it]                                                       13%|█▎        | 80/630 [3:28:48<18:19:56, 119.99s/it]
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 25%|██▌       | 2/8 [01:07<03:22, 33.80s/it][A
+ 38%|███▊      | 3/8 [02:26<04:23, 52.77s/it][A
+ 50%|█████     | 4/8 [03:44<04:08, 62.13s/it][A
+ 62%|██████▎   | 5/8 [04:59<03:19, 66.42s/it][A
+ 75%|███████▌  | 6/8 [06:16<02:20, 70.17s/it][A
+ 88%|████████▊ | 7/8 [07:32<01:11, 71.93s/it][A
+100%|██████████| 8/8 [08:39<00:00, 70.29s/it][A                                                      
+                                             [A 13%|█▎        | 80/630 [3:38:39<18:19:56, 119.99s/it]
+100%|██████████| 8/8 [08:39<00:00, 70.29s/it][A
+                                             [A 13%|█▎        | 81/630 [3:41:37<47:57:04, 314.43s/it] 13%|█▎        | 82/630 [3:43:17<38:06:37, 250.36s/it]                                                       13%|█▎        | 82/630 [3:43:17<38:06:37, 250.36s/it] 13%|█▎        | 83/630 [3:45:17<32:03:25, 210.98s/it] 13%|█▎        | 84/630 [3:46:46<26:27:50, 174.49s/it]                                                       13%|█▎        | 84/630 [3:46:46<26:27:50, 174.49s/it] 13%|█▎        | 85/630 [3:48:31<23:16:07, 153.70s/it] 14%|█▎        | 86/630 [3:50:13<20:51:59, 138.09s/it]                                                       14%|█▎        | 86/630 [3:50:13<20:51:59, 138.09s/it] 14%|█▍        | 87/630 [3:51:40<18:30:20, 122.69s/it] 14%|█▍        | 88/630 [3:53:18<17:23:37, 115.53s/it]                                                       14%|█▍        | 88/630 [3:53:18<17:23:37, 115.53s/it] 14%|█▍        | 89/630 [3:54:45<16:04:34, 106.98s/it] 14%|█▍        | 90/630 [3:56:06<14:51:02, 99.00s/it]                                                       14%|█▍        | 90/630 [3:56:06<14:51:02, 99.00s/it]
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 25%|██▌       | 2/8 [01:01<03:05, 30.91s/it][A
+ 38%|███▊      | 3/8 [02:04<03:41, 44.30s/it][A
+ 50%|█████     | 4/8 [03:05<03:22, 50.55s/it][A
+ 62%|██████▎   | 5/8 [04:04<02:39, 53.30s/it][A
+ 75%|███████▌  | 6/8 [04:56<01:45, 52.87s/it][A
+ 88%|████████▊ | 7/8 [05:58<00:55, 55.69s/it][A
+100%|██████████| 8/8 [06:54<00:00, 55.93s/it][A                                                     
+                                             [A 14%|█▍        | 90/630 [4:04:02<14:51:02, 99.00s/it]
+100%|██████████| 8/8 [06:54<00:00, 55.93s/it][A
+                                             [A 14%|█▍        | 91/630 [4:05:28<35:37:27, 237.94s/it] 15%|█▍        | 92/630 [4:06:46<28:22:42, 189.89s/it]                                                       15%|█▍        | 92/630 [4:06:46<28:22:42, 189.89s/it] 15%|█▍        | 93/630 [4:08:21<24:05:47, 161.54s/it] 15%|█▍        | 94/630 [4:09:40<20:21:37, 136.75s/it]                                                       15%|█▍        | 94/630 [4:09:40<20:21:37, 136.75s/it] 15%|█▌        | 95/630 [4:11:21<18:44:36, 126.12s/it] 15%|█▌        | 96/630 [4:12:50<17:03:27, 115.00s/it]                                                       15%|█▌        | 96/630 [4:12:50<17:03:27, 115.00s/it] 15%|█▌        | 97/630 [4:14:21<15:56:01, 107.62s/it] 16%|█▌        | 98/630 [4:15:48<14:59:02, 101.40s/it]                                                       16%|█▌        | 98/630 [4:15:48<14:59:02, 101.40s/it] 16%|█▌        | 99/630 [4:17:17<14:26:07, 97.87s/it]  16%|█▌        | 100/630 [4:18:53<14:17:58, 97.13s/it]                                                       16%|█▌        | 100/630 [4:18:53<14:17:58, 97.13s/it]
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 25%|██▌       | 2/8 [01:11<03:34, 35.70s/it][A
+ 38%|███▊      | 3/8 [02:14<03:56, 47.32s/it][A
+ 50%|█████     | 4/8 [03:24<03:42, 55.71s/it][A
+ 62%|██████▎   | 5/8 [04:34<03:01, 60.60s/it][A
+ 75%|███████▌  | 6/8 [05:41<02:05, 62.77s/it][A
+ 88%|████████▊ | 7/8 [06:54<01:05, 65.84s/it][A
+100%|██████████| 8/8 [07:58<00:00, 65.31s/it][A                                                      
+                                             [A 16%|█▌        | 100/630 [4:27:55<14:17:58, 97.13s/it]
+100%|██████████| 8/8 [07:58<00:00, 65.31s/it][A
+                                             [A 16%|█▌        | 101/630 [4:29:28<37:59:40, 258.56s/it] 16%|█▌        | 102/630 [4:30:46<29:58:06, 204.33s/it]                                                        16%|█▌        | 102/630 [4:30:46<29:58:06, 204.33s/it] 16%|█▋        | 103/630 [4:32:15<24:51:10, 169.77s/it] 17%|█▋        | 104/630 [4:34:02<22:03:43, 150.99s/it]                                                        17%|█▋        | 104/630 [4:34:02<22:03:43, 150.99s/it] 17%|█▋        | 105/630 [4:35:31<19:18:59, 132.46s/it] 17%|█▋        | 106/630 [4:37:27<18:32:38, 127.40s/it]                                                        17%|█▋        | 106/630 [4:37:27<18:32:38, 127.40s/it] 17%|█▋        | 107/630 [4:39:26<18:10:08, 125.06s/it] 17%|█▋        | 108/630 [4:41:24<17:48:30, 122.82s/it]                                                        17%|█▋        | 108/630 [4:41:24<17:48:30, 122.82s/it] 17%|█▋        | 109/630 [4:43:19<17:25:32, 120.41s/it] 17%|█▋        | 110/630 [4:45:27<17:44:16, 122.80s/it]                                                        17%|█▋        | 110/630 [4:45:27<17:44:16, 122.80s/it]
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 25%|██▌       | 2/8 [01:39<04:58, 49.70s/it][A
+ 38%|███▊      | 3/8 [03:20<05:54, 70.94s/it][A
+ 50%|█████     | 4/8 [04:59<05:26, 81.55s/it][A
+ 62%|██████▎   | 5/8 [06:34<04:18, 86.31s/it][A
+ 75%|███████▌  | 6/8 [08:14<03:01, 90.90s/it][A
+ 88%|████████▊ | 7/8 [09:52<01:33, 93.09s/it][A
+100%|██████████| 8/8 [11:31<00:00, 94.83s/it][A                                                       
+                                             [A 17%|█▋        | 110/630 [4:58:43<17:44:16, 122.80s/it]
+100%|██████████| 8/8 [11:31<00:00, 94.83s/it][A
+                                             [A 18%|█▊        | 111/630 [5:00:43<51:59:33, 360.64s/it] 18%|█▊        | 112/630 [5:03:07<42:32:01, 295.60s/it]                                                        18%|█▊        | 112/630 [5:03:07<42:32:01, 295.60s/it] 18%|█▊        | 113/630 [5:05:02<34:40:08, 241.41s/it] 18%|█▊        | 114/630 [5:07:38<30:58:07, 216.06s/it]                                                        18%|█▊        | 114/630 [5:07:38<30:58:07, 216.06s/it] 18%|█▊        | 115/630 [5:10:11<28:10:15, 196.92s/it] 18%|█▊        | 116/630 [5:12:40<26:04:06, 182.58s/it]                                                        18%|█▊        | 116/630 [5:12:40<26:04:06, 182.58s/it] 19%|█▊        | 117/630 [5:15:18<24:57:43, 175.17s/it] 19%|█▊        | 118/630 [5:17:49<23:54:34, 168.11s/it]                                                        19%|█▊        | 118/630 [5:17:49<23:54:34, 168.11s/it] 19%|█▉        | 119/630 [5:20:32<23:38:51, 166.60s/it] 19%|█▉        | 120/630 [5:23:14<23:24:28, 165.23s/it]                                                        19%|█▉        | 120/630 [5:23:14<23:24:28, 165.23s/it]
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 25%|██▌       | 2/8 [02:22<07:06, 71.02s/it][A
+ 38%|███▊      | 3/8 [04:35<08:04, 96.95s/it][A
+ 50%|█████     | 4/8 [06:54<07:30, 112.62s/it][A
+ 62%|██████▎   | 5/8 [09:15<06:07, 122.60s/it][A
+ 75%|███████▌  | 6/8 [11:33<04:15, 127.64s/it][A
+ 88%|████████▊ | 7/8 [13:51<02:11, 131.09s/it][A
+100%|██████████| 8/8 [16:14<00:00, 134.63s/it][A                                                       
+                                              [A 19%|█▉        | 120/630 [5:41:48<23:24:28, 165.23s/it]
+100%|██████████| 8/8 [16:14<00:00, 134.63s/it][A
+                                              [A 19%|█▉        | 121/630 [5:45:34<73:11:08, 517.62s/it] 19%|█▉        | 122/630 [5:48:14<57:53:49, 410.29s/it]                                                        19%|█▉        | 122/630 [5:48:14<57:53:49, 410.29s/it] 20%|█▉        | 123/630 [5:50:59<47:24:17, 336.60s/it] 20%|█▉        | 124/630 [5:53:44<40:05:05, 285.19s/it]                                                        20%|█▉        | 124/630 [5:53:44<40:05:05, 285.19s/it] 20%|█▉        | 125/630 [5:56:27<34:52:45, 248.65s/it] 20%|██        | 126/630 [5:59:11<31:14:51, 223.20s/it]                                                        20%|██        | 126/630 [5:59:11<31:14:51, 223.20s/it] 20%|██        | 127/630 [6:01:54<28:39:53, 205.16s/it] 20%|██        | 128/630 [6:04:39<26:54:07, 192.92s/it]                                                        20%|██        | 128/630 [6:04:39<26:54:07, 192.92s/it] 20%|██        | 129/630 [6:07:23<25:38:04, 184.20s/it] 21%|██        | 130/630 [6:10:06<24:43:39, 178.04s/it]                                                        21%|██        | 130/630 [6:10:06<24:43:39, 178.04s/it]
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 25%|██▌       | 2/8 [02:21<07:05, 70.98s/it][A
+ 38%|███▊      | 3/8 [04:44<08:24, 100.96s/it][A
+ 50%|█████     | 4/8 [07:07<07:45, 116.45s/it][A
+ 62%|██████▎   | 5/8 [09:30<06:17, 125.70s/it][A
+ 75%|███████▌  | 6/8 [11:53<04:22, 131.38s/it][A
+ 88%|████████▊ | 7/8 [14:15<02:14, 134.92s/it][A
+100%|██████████| 8/8 [16:39<00:00, 137.82s/it][A                                                       
+                                              [A 21%|██        | 130/630 [6:29:11<24:43:39, 178.04s/it]
+100%|██████████| 8/8 [16:39<00:00, 137.82s/it][A
+                                              [A 21%|██        | 131/630 [6:31:53<71:37:29, 516.73s/it] 21%|██        | 132/630 [6:34:37<56:49:52, 410.83s/it]                                                        21%|██        | 132/630 [6:34:37<56:49:52, 410.83s/it] 21%|██        | 133/630 [6:37:22<46:32:29, 337.12s/it] 21%|██▏       | 134/630 [6:40:03<39:10:23, 284.32s/it]                                                        21%|██▏       | 134/630 [6:40:03<39:10:23, 284.32s/it] 21%|██▏       | 135/630 [6:42:47<34:07:09, 248.14s/it] 22%|██▏       | 136/630 [6:45:24<30:17:46, 220.78s/it]                                                        22%|██▏       | 136/630 [6:45:24<30:17:46, 220.78s/it] 22%|██▏       | 137/630 [6:48:00<27:34:02, 201.30s/it] 22%|██▏       | 138/630 [6:50:40<25:49:53, 189.01s/it]                                                        22%|██▏       | 138/630 [6:50:40<25:49:53, 189.01s/it] 22%|██▏       | 139/630 [6:53:19<24:32:54, 179.99s/it] 22%|██▏       | 140/630 [6:55:47<23:11:21, 170.37s/it]                                                        22%|██▏       | 140/630 [6:55:47<23:11:21, 170.37s/it]
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 25%|██▌       | 2/8 [01:53<05:40, 56.76s/it][A
+ 38%|███▊      | 3/8 [03:46<06:40, 80.07s/it][A
+ 50%|█████     | 4/8 [05:47<06:22, 95.63s/it][A
+ 62%|██████▎   | 5/8 [07:39<05:03, 101.17s/it][A
+ 75%|███████▌  | 6/8 [09:29<03:28, 104.23s/it][A
+ 88%|████████▊ | 7/8 [11:22<01:46, 106.75s/it][A
+100%|██████████| 8/8 [13:08<00:00, 106.77s/it][A                                                       
+                                              [A 22%|██▏       | 140/630 [7:10:53<23:11:21, 170.37s/it]
+100%|██████████| 8/8 [13:08<00:00, 106.77s/it][A
+                                              [A 22%|██▏       | 141/630 [7:13:21<59:08:29, 435.40s/it] 23%|██▎       | 142/630 [7:15:30<46:33:33, 343.47s/it]                                                        23%|██▎       | 142/630 [7:15:30<46:33:33, 343.47s/it] 23%|██▎       | 143/630 [7:17:49<38:10:48, 282.23s/it] 23%|██▎       | 144/630 [7:20:21<32:48:27, 243.02s/it]                                                        23%|██▎       | 144/630 [7:20:21<32:48:27, 243.02s/it] 23%|██▎       | 145/630 [7:22:18<27:38:49, 205.22s/it] 23%|██▎       | 146/630 [7:24:30<24:40:22, 183.52s/it]                                                        23%|██▎       | 146/630 [7:24:30<24:40:22, 183.52s/it] 23%|██▎       | 147/630 [7:26:32<22:08:48, 165.07s/it] 23%|██▎       | 148/630 [7:28:32<20:15:32, 151.31s/it]                                                        23%|██▎       | 148/630 [7:28:32<20:15:32, 151.31s/it] 24%|██▎       | 149/630 [7:30:32<18:57:59, 141.95s/it] 24%|██▍       | 150/630 [7:32:42<18:27:15, 138.41s/it]                                                        24%|██▍       | 150/630 [7:32:42<18:27:15, 138.41s/it]
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 25%|██▌       | 2/8 [01:41<05:03, 50.65s/it][A
+ 38%|███▊      | 3/8 [03:16<05:45, 69.01s/it][A
+ 50%|█████     | 4/8 [04:53<05:18, 79.68s/it][A
+ 62%|██████▎   | 5/8 [06:32<04:19, 86.41s/it][A
+ 75%|███████▌  | 6/8 [08:02<02:54, 87.45s/it][A
+ 88%|████████▊ | 7/8 [09:35<01:29, 89.39s/it][A
+100%|██████████| 8/8 [11:05<00:00, 89.44s/it][A                                                       
+                                             [A 24%|██▍       | 150/630 [7:45:16<18:27:15, 138.41s/it]
+100%|██████████| 8/8 [11:05<00:00, 89.44s/it][A
+                                             [A 24%|██▍       | 151/630 [7:47:16<47:47:20, 359.17s/it] 24%|██▍       | 152/630 [7:49:20<38:17:57, 288.45s/it]                                                        24%|██▍       | 152/630 [7:49:20<38:17:57, 288.45s/it] 24%|██▍       | 153/630 [7:51:20<31:32:36, 238.06s/it] 24%|██▍       | 154/630 [7:53:07<26:16:35, 198.73s/it]                                                        24%|██▍       | 154/630 [7:53:07<26:16:35, 198.73s/it] 25%|██▍       | 155/630 [7:55:17<23:28:50, 177.96s/it] 25%|██▍       | 156/630 [7:57:12<20:56:44, 159.08s/it]                                                        25%|██▍       | 156/630 [7:57:12<20:56:44, 159.08s/it] 25%|██▍       | 157/630 [7:59:04<19:04:33, 145.19s/it] 25%|██▌       | 158/630 [8:00:56<17:42:46, 135.10s/it]                                                        25%|██▌       | 158/630 [8:00:56<17:42:46, 135.10s/it] 25%|██▌       | 159/630 [8:02:49<16:49:28, 128.60s/it] 25%|██▌       | 160/630 [8:04:36<15:56:34, 122.12s/it]                                                        25%|██▌       | 160/630 [8:04:36<15:56:34, 122.12s/it]
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 25%|██▌       | 2/8 [01:21<04:04, 40.73s/it][A
+ 38%|███▊      | 3/8 [02:43<04:48, 57.75s/it][A
+ 50%|█████     | 4/8 [04:08<04:32, 68.18s/it][A
+ 62%|██████▎   | 5/8 [05:22<03:30, 70.01s/it][A
+ 75%|███████▌  | 6/8 [06:35<02:22, 71.23s/it][A
+ 88%|████████▊ | 7/8 [07:55<01:13, 73.98s/it][A
+100%|██████████| 8/8 [09:12<00:00, 74.82s/it][A                                                       
+                                             [A 25%|██▌       | 160/630 [8:15:09<15:56:34, 122.12s/it]
+100%|██████████| 8/8 [09:12<00:00, 74.82s/it][A
+                                             [A 26%|██▌       | 161/630 [8:17:46<42:00:29, 322.45s/it] 26%|██▌       | 162/630 [8:19:25<33:10:57, 255.25s/it]                                                        26%|██▌       | 162/630 [8:19:25<33:10:57, 255.25s/it] 26%|██▌       | 163/630 [8:21:08<27:12:36, 209.76s/it] 26%|██▌       | 164/630 [8:22:43<22:41:36, 175.31s/it]                                                        26%|██▌       | 164/630 [8:22:43<22:41:36, 175.31s/it] 26%|██▌       | 165/630 [8:24:19<19:34:23, 151.53s/it] 26%|██▋       | 166/630 [8:25:51<17:11:50, 133.43s/it]                                                        26%|██▋       | 166/630 [8:25:51<17:11:50, 133.43s/it] 27%|██▋       | 167/630 [8:27:30<15:52:05, 123.38s/it] 27%|██▋       | 168/630 [8:29:02<14:37:20, 113.94s/it]                                                        27%|██▋       | 168/630 [8:29:02<14:37:20, 113.94s/it] 27%|██▋       | 169/630 [8:30:30<13:34:46, 106.04s/it] 27%|██▋       | 170/630 [8:32:02<13:01:48, 101.98s/it]                                                        27%|██▋       | 170/630 [8:32:02<13:01:48, 101.98s/it]
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 25%|██▌       | 2/8 [01:01<03:05, 30.91s/it][A
+ 38%|███▊      | 3/8 [02:00<03:33, 42.63s/it][A
+ 50%|█████     | 4/8 [02:59<03:15, 48.75s/it][A
+ 62%|██████▎   | 5/8 [04:00<02:39, 53.01s/it][A
+ 75%|███████▌  | 6/8 [04:56<01:47, 53.79s/it][A
+ 88%|████████▊ | 7/8 [05:55<00:55, 55.49s/it][A
+100%|██████████| 8/8 [06:53<00:00, 56.42s/it][A                                                       
+                                             [A 27%|██▋       | 170/630 [8:39:55<13:01:48, 101.98s/it]
+100%|██████████| 8/8 [06:53<00:00, 56.42s/it][A
+                                             [A 27%|██▋       | 171/630 [8:41:14<30:12:40, 236.95s/it] 27%|██▋       | 172/630 [8:42:44<24:30:19, 192.62s/it]                                                        27%|██▋       | 172/630 [8:42:44<24:30:19, 192.62s/it] 27%|██▋       | 173/630 [8:44:08<20:20:04, 160.18s/it] 28%|██▊       | 174/630 [8:45:29<17:16:02, 136.32s/it]                                                        28%|██▊       | 174/630 [8:45:29<17:16:02, 136.32s/it] 28%|██▊       | 175/630 [8:46:48<15:04:36, 119.29s/it] 28%|██▊       | 176/630 [8:48:09<13:34:48, 107.68s/it]                                                        28%|██▊       | 176/630 [8:48:09<13:34:48, 107.68s/it] 28%|██▊       | 177/630 [8:49:30<12:31:58, 99.60s/it]  28%|██▊       | 178/630 [8:50:48<11:42:48, 93.29s/it]                                                       28%|██▊       | 178/630 [8:50:48<11:42:48, 93.29s/it] 28%|██▊       | 179/630 [8:52:08<11:12:02, 89.41s/it] 29%|██▊       | 180/630 [8:53:23<10:37:12, 84.96s/it]                                                       29%|██▊       | 180/630 [8:53:23<10:37:12, 84.96s/it]
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 25%|██▌       | 2/8 [00:55<02:46, 27.80s/it][A
+ 38%|███▊      | 3/8 [01:50<03:15, 39.10s/it][A
+ 50%|█████     | 4/8 [02:43<02:57, 44.26s/it][A
+ 62%|██████▎   | 5/8 [03:38<02:23, 47.92s/it][A
+ 75%|███████▌  | 6/8 [04:31<01:39, 49.76s/it][A
+ 88%|████████▊ | 7/8 [05:24<00:50, 50.80s/it][A
+100%|██████████| 8/8 [06:22<00:00, 52.99s/it][A                                                      
+                                             [A 29%|██▊       | 180/630 [9:00:42<10:37:12, 84.96s/it]
+100%|██████████| 8/8 [06:22<00:00, 52.99s/it][A
+                                             [A 29%|██▊       | 181/630 [9:01:57<26:38:45, 213.64s/it] 29%|██▉       | 182/630 [9:03:12<21:24:49, 172.07s/it]                                                        29%|██▉       | 182/630 [9:03:12<21:24:49, 172.07s/it] 29%|██▉       | 183/630 [9:04:30<17:52:15, 143.93s/it] 29%|██▉       | 184/630 [9:05:51<15:27:59, 124.84s/it]                                                        29%|██▉       | 184/630 [9:05:51<15:27:59, 124.84s/it] 29%|██▉       | 185/630 [9:07:15<13:55:59, 112.72s/it] 30%|██▉       | 186/630 [9:08:37<12:44:49, 103.35s/it]                                                        30%|██▉       | 186/630 [9:08:37<12:44:49, 103.35s/it] 30%|██▉       | 187/630 [9:09:49<11:35:27, 94.19s/it]  30%|██▉       | 188/630 [9:11:15<11:13:51, 91.47s/it]                                                       30%|██▉       | 188/630 [9:11:15<11:13:51, 91.47s/it] 30%|███       | 189/630 [9:12:43<11:04:54, 90.46s/it] 30%|███       | 190/630 [9:14:07<10:50:59, 88.77s/it]                                                       30%|███       | 190/630 [9:14:07<10:50:59, 88.77s/it]
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 25%|██▌       | 2/8 [01:02<03:08, 31.33s/it][A
+ 38%|███▊      | 3/8 [02:03<03:38, 43.74s/it][A
+ 50%|█████     | 4/8 [02:59<03:12, 48.24s/it][A
+ 62%|██████▎   | 5/8 [04:03<02:40, 53.54s/it][A
+ 75%|███████▌  | 6/8 [04:55<01:46, 53.25s/it][A
+ 88%|████████▊ | 7/8 [05:53<00:54, 54.64s/it][A
+100%|██████████| 8/8 [06:52<00:00, 56.00s/it][A                                                      
+                                             [A 30%|███       | 190/630 [9:21:59<10:50:59, 88.77s/it]
+100%|██████████| 8/8 [06:52<00:00, 56.00s/it][A
+                                             [A 30%|███       | 191/630 [9:23:31<28:11:59, 231.25s/it] 30%|███       | 192/630 [9:25:23<23:45:39, 195.30s/it]                                                        30%|███       | 192/630 [9:25:23<23:45:39, 195.30s/it] 31%|███       | 193/630 [9:26:56<19:59:08, 164.64s/it] 31%|███       | 194/630 [9:28:34<17:32:23, 144.82s/it]                                                        31%|███       | 194/630 [9:28:34<17:32:23, 144.82s/it] 31%|███       | 195/630 [9:30:41<16:50:29, 139.38s/it] 31%|███       | 196/630 [9:32:31<15:43:39, 130.46s/it]                                                        31%|███       | 196/630 [9:32:31<15:43:39, 130.46s/it] 31%|███▏      | 197/630 [9:34:40<15:38:44, 130.08s/it] 31%|███▏      | 198/630 [9:36:34<15:02:07, 125.30s/it]                                                        31%|███▏      | 198/630 [9:36:34<15:02:07, 125.30s/it] 32%|███▏      | 199/630 [9:38:55<15:33:53, 130.01s/it] 32%|███▏      | 200/630 [9:41:15<15:52:54, 132.96s/it]                                                        32%|███▏      | 200/630 [9:41:15<15:52:54, 132.96s/it]
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 25%|██▌       | 2/8 [01:58<05:55, 59.26s/it][A
+ 38%|███▊      | 3/8 [03:49<06:43, 80.75s/it][A
+ 50%|█████     | 4/8 [05:30<05:53, 88.41s/it][A
+ 62%|██████▎   | 5/8 [07:11<04:38, 92.84s/it][A
+ 75%|███████▌  | 6/8 [08:50<03:09, 94.72s/it][A
+ 88%|████████▊ | 7/8 [10:23<01:34, 94.15s/it][A
+100%|██████████| 8/8 [12:04<00:00, 96.51s/it][A                                                       
+                                             [A 32%|███▏      | 200/630 [9:55:04<15:52:54, 132.96s/it]
+100%|██████████| 8/8 [12:04<00:00, 96.51s/it][A
+                                             [A 32%|███▏      | 201/630 [9:58:32<48:10:56, 404.33s/it] 32%|███▏      | 202/630 [10:00:57<38:49:34, 326.58s/it]                                                         32%|███▏      | 202/630 [10:00:57<38:49:34, 326.58s/it] 32%|███▏      | 203/630 [10:03:27<32:26:20, 273.49s/it] 32%|███▏      | 204/630 [10:05:47<27:36:27, 233.30s/it]                                                         32%|███▏      | 204/630 [10:05:47<27:36:27, 233.30s/it] 33%|███▎      | 205/630 [10:08:18<24:37:54, 208.65s/it] 33%|███▎      | 206/630 [10:10:57<22:49:37, 193.82s/it]                                                         33%|███▎      | 206/630 [10:10:57<22:49:37, 193.82s/it] 33%|███▎      | 207/630 [10:13:22<21:03:08, 179.17s/it] 33%|███▎      | 208/630 [10:15:52<19:59:12, 170.50s/it]                                                         33%|███▎      | 208/630 [10:15:52<19:59:12, 170.50s/it] 33%|███▎      | 209/630 [10:18:25<19:20:09, 165.34s/it] 33%|███▎      | 210/630 [10:20:59<18:53:30, 161.93s/it]                                                         33%|███▎      | 210/630 [10:20:59<18:53:30, 161.93s/it]
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 25%|██▌       | 2/8 [02:07<06:21, 63.58s/it][A
+ 38%|███▊      | 3/8 [04:09<07:21, 88.23s/it][A
+ 50%|█████     | 4/8 [06:06<06:34, 98.66s/it][A
+ 62%|██████▎   | 5/8 [08:06<05:18, 106.31s/it][A
+ 75%|███████▌  | 6/8 [10:06<03:41, 110.86s/it][A
+ 88%|████████▊ | 7/8 [12:08<01:54, 114.33s/it][A
+100%|██████████| 8/8 [14:09<00:00, 116.34s/it][A                                                        
+                                              [A 33%|███▎      | 210/630 [10:37:11<18:53:30, 161.93s/it]
+100%|██████████| 8/8 [14:09<00:00, 116.34s/it][A
+                                              [A 33%|███▎      | 211/630 [10:39:44<52:27:34, 450.73s/it] 34%|███▎      | 212/630 [10:42:21<42:05:12, 362.47s/it]                                                         34%|███▎      | 212/630 [10:42:21<42:05:12, 362.47s/it] 34%|███▍      | 213/630 [10:44:54<34:43:07, 299.73s/it] 34%|███▍      | 214/630 [10:47:19<29:16:13, 253.30s/it]                                                         34%|███▍      | 214/630 [10:47:19<29:16:13, 253.30s/it] 34%|███▍      | 215/630 [10:49:47<25:34:22, 221.84s/it] 34%|███▍      | 216/630 [10:52:23<23:13:18, 201.93s/it]                                                         34%|███▍      | 216/630 [10:52:23<23:13:18, 201.93s/it] 34%|███▍      | 217/630 [10:55:04<21:46:40, 189.83s/it] 35%|███▍      | 218/630 [10:57:47<20:47:22, 181.66s/it]                                                         35%|███▍      | 218/630 [10:57:47<20:47:22, 181.66s/it] 35%|███▍      | 219/630 [11:00:12<19:29:58, 170.80s/it] 35%|███▍      | 220/630 [11:02:49<18:57:47, 166.51s/it]                                                         35%|███▍      | 220/630 [11:02:49<18:57:47, 166.51s/it]
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 25%|██▌       | 2/8 [02:11<06:35, 65.89s/it][A
+ 38%|███▊      | 3/8 [04:15<07:29, 89.95s/it][A
+ 50%|█████     | 4/8 [06:24<06:58, 104.61s/it][A
+ 62%|██████▎   | 5/8 [08:27<05:33, 111.08s/it][A
+ 75%|███████▌  | 6/8 [10:34<03:52, 116.19s/it][A
+ 88%|████████▊ | 7/8 [12:40<01:59, 119.55s/it][A
+100%|██████████| 8/8 [14:48<00:00, 122.03s/it][A                                                        
+                                              [A 35%|███▍      | 220/630 [11:19:46<18:57:47, 166.51s/it]
+100%|██████████| 8/8 [14:48<00:00, 122.03s/it][A
+                                              [A 35%|███▌      | 221/630 [11:22:24<53:18:02, 469.15s/it] 35%|███▌      | 222/630 [11:25:06<42:42:48, 376.88s/it]                                                         35%|███▌      | 222/630 [11:25:06<42:42:48, 376.88s/it] 35%|███▌      | 223/630 [11:27:49<35:22:12, 312.86s/it] 36%|███▌      | 224/630 [11:30:28<30:03:31, 266.53s/it]                                                         36%|███▌      | 224/630 [11:30:28<30:03:31, 266.53s/it] 36%|███▌      | 225/630 [11:33:02<26:12:25, 232.95s/it] 36%|███▌      | 226/630 [11:35:39<23:33:57, 209.99s/it]                                                         36%|███▌      | 226/630 [11:35:39<23:33:57, 209.99s/it] 36%|███▌      | 227/630 [11:38:23<21:58:40, 196.33s/it] 36%|███▌      | 228/630 [11:41:04<20:44:50, 185.80s/it]                                                         36%|███▌      | 228/630 [11:41:04<20:44:50, 185.80s/it] 36%|███▋      | 229/630 [11:43:49<19:59:12, 179.43s/it] 37%|███▋      | 230/630 [11:46:32<19:23:15, 174.49s/it]                                                         37%|███▋      | 230/630 [11:46:32<19:23:15, 174.49s/it]
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 25%|██▌       | 2/8 [02:17<06:51, 68.52s/it][A
+ 38%|███▊      | 3/8 [04:40<08:18, 99.67s/it][A
+ 50%|█████     | 4/8 [06:57<07:34, 113.71s/it][A[2026-03-11T13:51:07.075] error: *** JOB 4296814 ON rack14-02 CANCELLED AT 2026-03-11T13:51:07 DUE TO TIME LIMIT ***
+W0311 07:51:07.079000 447617 torch/distributed/elastic/agent/server/api.py:723] Received 15 death signal, shutting down workers
+W0311 07:51:07.089000 447617 torch/distributed/elastic/multiprocessing/api.py:900] Sending process 447659 closing signal SIGTERM
+W0311 07:51:07.091000 447617 torch/distributed/elastic/multiprocessing/api.py:900] Sending process 447660 closing signal SIGTERM
+W0311 07:51:07.092000 447617 torch/distributed/elastic/multiprocessing/api.py:900] Sending process 447661 closing signal SIGTERM
+W0311 07:51:07.093000 447617 torch/distributed/elastic/multiprocessing/api.py:900] Sending process 447662 closing signal SIGTERM
+/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/python/3.11.5/lib/python3.11/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 1 leaked shared_memory objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+Traceback (most recent call last):
+  File "/project/aip-xiye17/songtaow/llm/bin/accelerate", line 10, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/project/aip-xiye17/songtaow/llm/lib/python3.11/site-packages/accelerate/commands/accelerate_cli.py", line 50, in main
+    args.func(args)
+  File "/project/aip-xiye17/songtaow/llm/lib/python3.11/site-packages/accelerate/commands/launch.py", line 1226, in launch_command
+    multi_gpu_launcher(args)
+  File "/project/aip-xiye17/songtaow/llm/lib/python3.11/site-packages/accelerate/commands/launch.py", line 853, in multi_gpu_launcher
+    distrib_run.run(args)
+  File "/project/aip-xiye17/songtaow/llm/lib/python3.11/site-packages/torch/distributed/run.py", line 892, in run
+    elastic_launch(
+  File "/project/aip-xiye17/songtaow/llm/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 143, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/project/aip-xiye17/songtaow/llm/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    result = agent.run()
+             ^^^^^^^^^^^
+  File "/project/aip-xiye17/songtaow/llm/lib/python3.11/site-packages/torch/distributed/elastic/metrics/api.py", line 138, in wrapper
+    result = f(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^
+  File "/project/aip-xiye17/songtaow/llm/lib/python3.11/site-packages/torch/distributed/elastic/agent/server/api.py", line 715, in run
+    result = self._invoke_run(role)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/project/aip-xiye17/songtaow/llm/lib/python3.11/site-packages/torch/distributed/elastic/agent/server/api.py", line 879, in _invoke_run
+    time.sleep(monitor_interval)
+  File "/project/aip-xiye17/songtaow/llm/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py", line 84, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 447617 got signal: 15

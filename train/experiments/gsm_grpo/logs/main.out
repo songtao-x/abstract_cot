@@ -1,0 +1,16 @@
+[train_rl:start] task=gsm model=Qwen/Qwen3-4B
+[train_rl:tokenizer] loading tokenizer
+[train_rl:start] task=gsm model=Qwen/Qwen3-4B
+[train_rl:tokenizer] loading tokenizer
+[train_rl:start] task=gsm model=Qwen/Qwen3-4B
+[train_rl:tokenizer] loading tokenizer
+[train_rl:start] task=gsm model=Qwen/Qwen3-4B
+[train_rl:tokenizer] loading tokenizer
+[train_rl:model] loading model
+[train_rl:model] loading model
+[train_rl:model] loading model
+[train_rl:model] loading model
+[train_rl:data] loading train dataset from /home/songtaow/projects/aip-qchen/songtaow/reward_hack/abstract/train/../data/gsm_smoke_train.jsonl
+[train_rl:data] loading train dataset from /home/songtaow/projects/aip-qchen/songtaow/reward_hack/abstract/train/../data/gsm_smoke_train.jsonl
+[train_rl:data] loading train dataset from /home/songtaow/projects/aip-qchen/songtaow/reward_hack/abstract/train/../data/gsm_smoke_train.jsonl
+[train_rl:data] loading train dataset from /home/songtaow/projects/aip-qchen/songtaow/reward_hack/abstract/train/../data/gsm_smoke_train.jsonl

@@ -1,0 +1,27 @@
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:02<00:05,  2.94s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:05<00:02,  2.92s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:05<00:00,  1.97s/it]
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:01,  1.34it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:01<00:00,  1.38it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:01<00:00,  2.03it/s]
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:01,  1.39it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:01<00:00,  1.39it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:01<00:00,  2.06it/s]
+Traceback (most recent call last):
+  File "/project/aip-qchen/songtaow/reward_hack/abstract/train/gsm/gsm_dc/evaluate.py", line 88, in <module>
+    ).to(device).eval()
+      ^^^^^^^^^^
+  File "/project/aip-xiye17/songtaow/llm/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4462, in to
+    return super().to(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/project/aip-xiye17/songtaow/llm/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1369, in to
+    return self._apply(convert)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/project/aip-xiye17/songtaow/llm/lib/python3.11/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  File "/project/aip-xiye17/songtaow/llm/lib/python3.11/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  File "/project/aip-xiye17/songtaow/llm/lib/python3.11/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  [Previous line repeated 2 more times]
+  File "/project/aip-xiye17/songtaow/llm/lib/python3.11/site-packages/torch/nn/modules/module.py", line 955, in _apply
+    param_applied = fn(param)
+                    ^^^^^^^^^
+  File "/project/aip-xiye17/songtaow/llm/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1355, in convert
+    return t.to(
+           ^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 96.00 MiB. GPU 0 has a total capacity of 44.40 GiB of which 31.31 MiB is free. Including non-PyTorch memory, this process has 44.36 GiB memory in use. Of the allocated memory 43.95 GiB is allocated by PyTorch, and 1.85 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
