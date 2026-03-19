@@ -9,3 +9,5 @@ wandb/
 **/__pycache__/
 *.log
 *.pyc
+
+TASK.md
