@@ -191,7 +191,7 @@ def _countdown_answer_reward(answer_text: str, target: int, numbers: list[int]) 
     value, used_numbers = parsed
     if value != Fraction(target):
         return 0.0
-    if len(used_numbers) > 1 and sorted(used_numbers) != sorted(numbers):
+    if sorted(used_numbers) != sorted(numbers):
         return 0.0
     return 1.0
 
@@ -217,7 +217,7 @@ def evaluate_countdown_completion(completion: str, target: int, numbers: list[in
         predicted_value = int(value) if value.denominator == 1 else float(value)
         if value != Fraction(target):
             failure_type = "wrong_value"
-        elif len(used_numbers) > 1 and sorted(used_numbers) != sorted(numbers):
+        elif sorted(used_numbers) != sorted(numbers):
             failure_type = "wrong_number_usage"
 
     base_reward = _countdown_answer_reward(answer_text, target, numbers)
@@ -296,13 +296,18 @@ def _span_logprob_batch(
     tokenizer: Any,
     full_texts: list[str],
     char_spans: list[tuple[int, int]],
-) -> list[float]:
+) -> list[tuple[float, float, int]]:
+    """Return list of (logprob_sum, entropy_sum, token_count) per example.
+
+    Per-token averages: logprob_sum / token_count and entropy_sum / token_count.
+    Entropy is the predictive-distribution entropy in nats at each scored position.
+    """
     if not full_texts:
         return []
 
     model.eval()
     device = _model_device(model)
-    span_logprobs: list[float] = []
+    span_results: list[tuple[float, float, int]] = []
     for text, (char_start, char_end) in zip(full_texts, char_spans, strict=True):
         encoded = tokenizer(
             text,
@@ -323,7 +328,7 @@ def _span_logprob_batch(
         target_mask = attention_mask[:, 1:]
 
         if char_end <= char_start:
-            span_logprobs.append(0.0)
+            span_results.append((0.0, 0.0, 0))
             del encoded, input_ids, attention_mask, logits
             continue
 
@@ -333,24 +338,27 @@ def _span_logprob_batch(
             if end > start and end > char_start and start < char_end and idx > 0
         ]
         if not token_positions:
-            span_logprobs.append(0.0)
+            span_results.append((0.0, 0.0, 0))
             del encoded, input_ids, attention_mask, logits
             continue
 
         pred_positions = torch.tensor([idx - 1 for idx in token_positions], device=device)
         valid_mask = target_mask[0, pred_positions].bool()
         if not valid_mask.any():
-            span_logprobs.append(0.0)
+            span_results.append((0.0, 0.0, 0))
             del encoded, input_ids, attention_mask, logits
             continue
 
         pred_positions = pred_positions[valid_mask]
         token_ids = target_ids[0, pred_positions]
         log_probs = F.log_softmax(logits, dim=-1)
-        span_logprobs.append(float(log_probs[0, pred_positions, token_ids].sum().item()))
-        del encoded, input_ids, attention_mask, logits, log_probs
+        lp = float(log_probs[0, pred_positions, token_ids].sum().item())
+        span_lp = log_probs[0, pred_positions, :]                              # [K, V]
+        ent = float((-(span_lp.exp() * span_lp).sum(dim=-1)).sum().item())
+        span_results.append((lp, ent, int(pred_positions.shape[0])))
+        del encoded, input_ids, attention_mask, logits, log_probs, span_lp
 
-    return span_logprobs
+    return span_results
 
 
 def _apply_plan_delta(
@@ -418,9 +426,13 @@ def _apply_plan_delta(
             rewards.append(base_reward)
             continue
 
-        delta = (think_with_scores[idx] - think_without_scores[idx]) - beta * (
-            answer_with_scores[idx] - answer_without_scores[idx]
-        )
+        # Preserve original semantics: subtract logprob sums (not per-token averages).
+        # Tuple is (logprob_sum, entropy_sum, token_count); unpack the sum here.
+        tw_sum  = think_with_scores[idx][0]
+        tow_sum = think_without_scores[idx][0]
+        aw_sum  = answer_with_scores[idx][0]
+        aow_sum = answer_without_scores[idx][0]
+        delta = (tw_sum - tow_sum) - beta * (aw_sum - aow_sum)
         rewards.append(base_reward + delta)
     _log_reward_stage("plan", "plan delta computation done")
     return rewards

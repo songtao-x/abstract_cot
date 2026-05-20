@@ -59,15 +59,32 @@ def discover_checkpoints(run_dir: Path) -> list[Path]:
     return [path for _, path in sorted(checkpoints, key=lambda item: item[0])]
 
 
-def _build_checkpoint_prompt(numbers: list[int], target: int) -> str:
+def _build_chat_prompt(tokenizer: Any, numbers: list[int], target: int) -> str:
+    """Build prompt matching training format (grpo._build_problem_text).
+
+    Includes ``Target: {target}`` because the model needs it to solve
+    countdown — earlier versions dropped the target with a misleading "hidden"
+    comment, capping eval accuracy near zero. Also drops the legacy
+    ``/no_think`` suffix and ``enable_thinking=False`` now that training uses
+    Qwen3's default thinking mode.
+    """
     problem_text = (
         f"Numbers: {', '.join(str(value) for value in numbers)}\n"
         f"Target: {target}\n"
         "Find a valid expression that reaches the target using each listed number exactly once."
     )
-    return abstract_prompt.format(
+    user_content = abstract_prompt.format(
         TASK_DESCIPTION=TASK_DESCRIPTION,
         PROBLEM_TEXT=problem_text,
+    )
+    messages = [
+        {"role": "system", "content": ""},
+        {"role": "user", "content": user_content},
+    ]
+    return tokenizer.apply_chat_template(
+        messages,
+        tokenize=False,
+        add_generation_prompt=True,
     )
 
 
@@ -75,7 +92,7 @@ def infer_completion(model: Any, tokenizer: Any, prompt: str, max_new_tokens: in
     device = next(model.parameters()).device
     inputs = tokenizer(prompt, return_tensors="pt").to(device)
     prompt_len = inputs["input_ids"].shape[1]
-    outputs = model.generate(**inputs, max_new_tokens=max_new_tokens)
+    outputs = model.generate(**inputs, max_new_tokens=max_new_tokens, pad_token_id=tokenizer.pad_token_id)
     return tokenizer.decode(outputs[0][prompt_len:], skip_special_tokens=True).strip()
 
 
@@ -168,7 +185,7 @@ def evaluate_checkpoint(
                 "it returns a dict-of-columns."
             )
 
-        prompt = row.get("prompt") or _build_checkpoint_prompt(row["numbers"], int(row["target"]))
+        prompt = _build_chat_prompt(tokenizer, [int(v) for v in row["numbers"]], int(row["target"]))
         completion = infer_completion(model, tokenizer, prompt, max_new_tokens=max_new_tokens)
         metrics = evaluate_countdown_completion(
             completion,

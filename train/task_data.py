@@ -45,6 +45,11 @@ def _parse_countdown_input(raw_input: str) -> tuple[list[int], int]:
 
 
 def _build_countdown_problem_text(numbers: list[int], target: int) -> str:
+    # The model needs the target to solve countdown; the training builder in
+    # grpo._build_problem_text always included it. The previous version of this
+    # function dropped the target and a misleading comment claimed it was
+    # hidden — that mismatch produced near-zero eval accuracy for runs that
+    # routed prompts through this path.
     numbers_text = ", ".join(str(x) for x in numbers)
     return (
         f"Numbers: {numbers_text}\n"

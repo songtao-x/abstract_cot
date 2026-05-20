@@ -1,6 +1,7 @@
 
 
 
+
 abstract_prompt = """
 SYSTEM:
 You are a careful problem solver. You must follow the output format exactly.
@@ -13,7 +14,7 @@ Provide your thinking steps about the detailed reasoning chains about how you wi
 
 Provide your ANSWER in the end. Your final answer to the specific question and answer only with no extra info.
 
-Task description: 
+Task description:
 {TASK_DESCIPTION}
 
 USER:
@@ -30,14 +31,14 @@ Hard constraints:
 - ABSTRACT must be generic: no numbers, no copied phrases from x, no operators, no target value.
 - ABSTRACT must be generic steps (not using instance details).
 - Your thinking steps must contain the full reasoning and computations needed to solve THIS instance.
-- ANSWER must contain only the final answer, with no extra text.
+- ANSWER must contain the final answer only, (like a math expression with given numbers), with no extra text.
 - Use exactly the tags and ordering below, no extra sections.
 
 Note: You are supposed to show your answer following the format:
 
 Provide your ABSTRACT into: <abstract>...(your abstract)</abstract>
 Then provive your thinking steps of the question into: <think>...(your thinking steps)</think>
-Finally, provide your final ANSWER only into: <answer>...(final answer only)</answer>.
+Finally, provide your ANSWER into: <answer>...(your answer)</answer>.
 
 Now show your answer.
 """
