@@ -11,3 +11,5 @@ wandb/
 *.pyc
 
 TASK.md
+data/gsm_dc_sample_all.json
+data/gsm_sample_train.jsonl
